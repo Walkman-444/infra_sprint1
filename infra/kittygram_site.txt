@@ -1,0 +1,5 @@
+IP: 51.250.20.116;
+name_taski: https://sprint14.sytes.net/;
+name_kittygram: https://sprint14.zapto.org/;
+login: admin;
+password: admin;
