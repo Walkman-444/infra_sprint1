@@ -4,7 +4,7 @@ from pathlib import Path
 
 load_dotenv()
 
-debug = os.getenv('debug')
+debug = os.getenv('debug', default = False)
 secret_key = os.getenv('secret_key')
 web_server_ip = os.getenv('web_server_ip')
 locol_server_ip =  os.getenv('locol_server_ip', default = '127.0.0.1')
@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = secret_key
 
-DEBUG = debug
+DEBUG = False
 
 ALLOWED_HOSTS = [web_server_ip, locol_server_ip, locol_server_name, web_server_name]
 
