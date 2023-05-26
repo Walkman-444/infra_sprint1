@@ -1,4 +1,5 @@
 import os
+from distutils.util import strtobool
 from dotenv import load_dotenv
 from pathlib import Path
 
@@ -15,7 +16,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = secret_key
 
-DEBUG = False
+DEBUG = bool(strtobool(debug))
 
 ALLOWED_HOSTS = [web_server_ip, locol_server_ip, locol_server_name, web_server_name]
 
